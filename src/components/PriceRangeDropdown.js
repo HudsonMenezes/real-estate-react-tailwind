@@ -20,7 +20,7 @@ const PriceRangeDropdown = () => {
 
   const prices = [
     {
-      value: "Faixa de Preço (todos)",
+      value: "Faixa de Preço (todas)",
     },
     {
       value: "100000 - 130000",
