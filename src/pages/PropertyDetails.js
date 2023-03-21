@@ -15,7 +15,6 @@ import { Link } from "react-router-dom";
 const PropertyDetails = () => {
   // get the house id
   const { id } = useParams();
-  console.log(id);
   // get the house based on the id
   const house = housesData.find((house) => {
     return house.id === parseInt(id);

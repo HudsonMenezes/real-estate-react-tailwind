@@ -26,7 +26,7 @@ const HouseContextProvider = ({ children }) => {
 
     //set countries state
     setCountries(uniqueCountries);
-  }, []);
+  }, [houses]);
 
   // return all properties
   useEffect(() => {
@@ -39,7 +39,7 @@ const HouseContextProvider = ({ children }) => {
 
     //set properties state
     setProperties(uniqueProperties);
-  }, []);
+  }, [houses]);
 
   const handleClick = () => {
     //set loading
@@ -55,6 +55,7 @@ const HouseContextProvider = ({ children }) => {
     // get second value of price which is the maximum price & parse it to number
     const maxPrice = parseInt(price.split(" ")[2]);
 
+    // eslint-disable-next-line array-callback-return
     const newHouses = housesData.filter((house) => {
       const housePrice = parseInt(house.price);
 
